@@ -33,57 +33,122 @@
 <a href="https://d4vidholly.github.io/Boro-Predictor/" target="_blank" rel="noopener noreferrer">
   <img src="boro-predictor-hero.png" alt="Project 1 Screenshot" width="600" height="400">
 </a>
-      <h3>Boro Predictor</h3>
+      <h1>Boro Predictor</h1>
       <div class="project-summary">
         <p>Web App to replace office football predictions and improve user flow, designed for mobile</p>
       </div>
       <div class="dropdown">
         <button onclick="toggleDropdown(this)">See more</button>
         <div class="dropdown-content">
-          <p>For the past couple of seasons I’ve taken part in a football predictor league for my team. It’s good fun and keeps things interesting when Boro’s season inevitably runs out of steam in the new year. This is all for a bit of fun but I thought I’d take a look at the process.
 
-Current Format
-
-Currently the organiser, Chris, sends out an email a couple of weeks before the season asking who’s interested. The email includes an Excel attachment with the fixtures on it. This needs to be downloaded, filled in, saved and returned. I normally pass this on to friends and family and in some cases help with their submissions. A couple of the issues I’ve came across:
-
-‘I don’t have Microsoft Excel’
-“All of the scores are formatted as dates”
-“You’ve emailed a file with no scores”
-
-One particularly analogue family member insists on opening the spreadsheet, writing all of the scores down on a piece of paper, taking a photo of the paper, texting it to me so I can fill in the spreadsheet and submit it. This resulted in them missing off two results and me having to call them on the day of the deadline to ask for them. This family member has finished above me in the past three seasons. What she lacks in IT skills she somehow makes up for in Championship football knowledge. 
-
-My Challenge:
-
-I wanted to have a go at creating something better and although in its infancy, I have a working prototype which removes the reliance on Excel by turning this into a web app. Some of the requirements I wanted to build into this:
-
-Easy to Use - We have already established the digital literacy of my relatives.
-Fun - Move away from a spreadsheet and bring the game to life
-Create Value - With all of this data in one place there is opportunity for storytelling
-
-For now I also wanted to replicate the current output - an excel file emailed back to Chris, but this could develop based on his own needs.
-
-My Process:
-
-I had this idea a while back and started with sketching the user journey and wireframes. The wireframes just sat there without me having a real idea how to build this. High fidelity prototypes would be good but achieve very little.
-
-I saw a post a while ago that was essentially - “Generalists love AI because it stops the reliance on specialists.”
-
-Features:
-
-My favourite feature is the Season Summary tool, which gives an overview of the upcoming season based on the predictions. As a keen Fantasy Manager I do try and  make stats driven decisions, so it’s nice to see if my results are overly positive or negative against my general optimism for the season. This also helps create a story in the players head and see how their predictions would play out - bringing a form to life.
-
-One feature I’ve thought about was adding current records to the background and telling the user if they have predicted this to be broken. For example, a 10-0 win over Sunderland would be our biggest ever league victory.
+<section>
+          <h3>Overview</h3>
+<p>
+For the past few seasons, I’ve taken part in a football predictor league run by a friend for fans of my team, Middlesbrough. While it’s all for fun, the process of submitting predictions via Excel spreadsheets had become frustrating for both participants and the organiser. I decided to explore a better way to run the game by designing and building a prototype web app that simplifies the experience—especially for less tech-savvy users.
 </p>
+
+<h3>Current Format – Key Issues</h3>
+
+<ul>
+  <li>
+    <strong>Reliance on Desktop Excel</strong><br>
+    Participants had to download a spreadsheet, input scores, save the file, and email it back—introducing friction from the start and no mobile-friendly alternative.
+  </li>
+  <li>
+    <strong>Tech Literacy Gaps</strong><br>
+    Some users didn’t have Excel, while others accidentally formatted scores as dates or submitted blank files, resulting in confusion and back-and-forth.
+  </li>
+  <li>
+    <strong>Manual Submissions</strong><br>
+    One family member (who will not be named!) wrote all their scores on paper, photographed it, and texted it to me—only to miss two fixtures. She still beat me in the final table.
+  </li>
+</ul>
+
+<figure>
+<img src="boro-predictor-wireframe.png" alt="Project 1 Screenshot" width="600" height="400">
+  <figcaption>
+    Figma wireframes showing early concepts for landscape
+  </figcaption>
+</figure>
+
+<h3>Design Challenge</h3>
+
+<p>I set out to build a tool that:</p>
+<ul>
+  <li><strong>Simplifies the Experience</strong> – Make it easy for everyone to enter predictions—especially those with limited digital experience.</li>
+  <li><strong>Adds Enjoyment</strong> – Move beyond spreadsheets to something more visually engaging and interactive.</li>
+  <li><strong>Creates Value</strong> – With all predictions captured centrally, there's potential for data visualisation and storytelling.</li>
+</ul>
+<p>
+Importantly, the prototype still exports an Excel file to maintain compatibility with the current system, but this can evolve with organiser input.
+</p>
+
+
+
+
+
+<h3>Design Approach</h3>
+
+<ul>
+  <li>
+    <strong>Wireframes</strong><br>
+    I began by sketching the user journey and basic screens, focusing on a smooth experience. This began as desktop-first but quickly developed into a mobile-friendly flow.
+  </li>
+  <li>
+    <strong>User Flows</strong><br>
+    Tested edge cases—scores are saved locally in case of a crash, and a “Clear All” button was added with a reset confirmation to avoid accidental loss.
+  </li>
+</ul>
+
+<h3>Key Features</h3>
+
+<ul>
+  <li>
+    <strong>Season Summary Tool</strong><br>
+    After submitting predictions, users get a snapshot of how their season might play out. It highlights their overall tone—optimistic or pessimistic—compared to realistic outcomes, helping players imagine their season unfolding and adding narrative to what was once a static task.
+  </li>
+  <li>
+    <strong>Fixture Colour Coding</strong><br>
+    Visual cues change fixture colours based on predicted results (win, draw, loss), making it easier to interpret at a glance.
+  </li>
+  <li>
+    <strong>Records Awareness (Planned Feature)</strong><br>
+    The app could flag if a prediction breaks a historical record—e.g. “10–0 vs Sunderland would be our biggest ever league win.”
+  </li>
+</ul>
+
+<h3>User Feedback</h3>
+
+<blockquote>
+  “I would definitely use this for next season’s challenge.”
+</blockquote>
+<blockquote>
+  “Love the visual colour change of the fixtures based on the result I predicted.”
+</blockquote>
+<blockquote>
+  “The season report is a great overview of my predictions—definitely too optimistic!”
+</blockquote>
+
+<h3>Next Steps</h3>
+
+<ul>
+  <li>Add admin tools for compiling results and managing leaderboards</li>
+  <li>Explore real-time prediction comparisons and historical stats</li>
+  <li>Integrate with external fixture APIs for live updates</li>
+  <li>Review whether Excel remains the best database format going forward</li>
+</ul>
         </div>
       </div>
     </div>
+
+    </section>
 
     <!-- Project 2 -->
     <div class="project">
 <a href="https://d4vidholly.github.io/TAG-running//" target="_blank" rel="noopener noreferrer">
   <img src="tag-running-hero.png" alt="Project 1 Screenshot" width="600" height="400">
 </a>
-      <h3>TAG Running</h3>
+      <h1>TAG Running</h1>
       <div class="project-summary">
         <p>Web Tool designed to make running more accessible through age graded results and goal setting.</p>
       </div>
@@ -100,7 +165,7 @@ One feature I’ve thought about was adding current records to the background an
 <a href="https://d4vidholly.github.io/WNF-Manager//" target="_blank" rel="noopener noreferrer">
   <img src="wnf-manager-hero.png" alt="Project 1 Screenshot" width="600" height="400">
 </a>
-      <h3>WNF Manager 25</h3>
+      <h1>WNF Manager 25</h1>
       <div class="project-summary">
         <p>Web Tool designed to help football match organisers create fair and balanced team sheets.</p>
       </div>
@@ -130,6 +195,13 @@ One feature I’ve thought about was adding current records to the background an
     I researched, designed, and built a modern web app version of the <strong>Wembley 2016 board game</strong> using HTML, CSS, and JavaScript. The goal was to preserve the nostalgic value of the original while solving long-standing usability and relevance issues. The live site replaces outdated, often misplaced physical components with a dynamic, customisable digital experience.
   </p>
 
+ <figure>
+  <img src="wembley_board.png" alt="Project 1 Screenshot" width="600" height="400">
+  <figcaption>
+    Wembley Redesign 2016 - Credit: <a href="https://www.greyboxcreative.co.uk/work/case-study/wembley-board-game" target="_blank" rel="noopener noreferrer">Grey Box Creative</a>
+  </figcaption>
+</figure>
+
   <h2>Original Game – Key Issues</h2>
 
 <p><strong>Complexity:</strong> Cumbersome rules and fiddly mechanics (especially money distribution) slowed down gameplay and frustrated players.</p>
@@ -140,7 +212,14 @@ One feature I’ve thought about was adding current records to the background an
 
 <p><strong>Outdated Elements:</strong> Team lineups became obsolete quickly due to promotion and relegation in real-world football.</p>
 
+
+
+ <figure>
 <img src="wembley-wireframe-1.png" alt="Project 1 Screenshot" width="600" height="400">
+  <figcaption>
+    Low fidelity Figma wireframes showing Team and Round selection flow
+  </figcaption>
+</figure>
 
 <h2>Design Approach</h2>
 
@@ -152,7 +231,14 @@ One feature I’ve thought about was adding current records to the background an
 
 <p><strong>Customisable Mechanics:</strong> Dice rolls, team selection, and gameplay elements are now fully customisable, allowing for up-to-date seasonal versions and flexible rule sets.</p>
 
-<img src="wembley-badges.png" alt="Project 1 Screenshot" class="case-study-img" width="600" height="400">
+
+
+ <figure>
+  <img src="wembley-badges.png" alt="Project 1 Screenshot" class="case-study-img" width="600" height="400">
+  <figcaption>
+    Full badge suite of teams, designed with components from <a href="https://game-icons.net/" target="_blank" rel="noopener noreferrer">Game Icons</a>
+  </figcaption>
+</figure>
 
   <h2>Player Feedback</h2>
   <blockquote>
@@ -165,7 +251,13 @@ One feature I’ve thought about was adding current records to the background an
     “Feels like waiting for scores on the telly again—nostalgic but smoother!”
   </blockquote>
 
-<img src="wembley-match-report.png" alt="Project 1 Screenshot" width="600" height="400">
+       <figure>
+  <img src="wembley-match-report.png" alt="Project 1 Screenshot" class="case-study-img" width="600" height="400">
+  <figcaption>
+    "Palace win the FA Cup" - Maybe the dice aren't too far off after all..
+  </figcaption>
+</figure>
+
 
 
   <h2>Next Steps</h2>
